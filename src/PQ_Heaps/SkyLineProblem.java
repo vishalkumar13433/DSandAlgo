@@ -1,3 +1,7 @@
+package PQ_Heaps;
+
+import PQ_Heaps.BuildingPoints;
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

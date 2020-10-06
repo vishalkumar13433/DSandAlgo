@@ -1,4 +1,6 @@
-	public class Entry
+package PQ_Heaps;
+
+public class Entry
 	{
 		int key,count;
 		public Entry(int key, int value) {
