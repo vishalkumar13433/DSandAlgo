@@ -1,7 +1,10 @@
 package GraphTheory.graphTraversal;
 
 import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 import java.util.Stack;
+import java.util.stream.Collectors;
 
 import GraphTheory.GraphRepresentation.GraphUsingAdjacencyList;
 
@@ -20,30 +23,35 @@ public class TopologicalSort {
         System.out.println("Following is a Topological " + 
                            "sort of the given graph"); 
         topologicalSort(g);
-        
+        Integer i = new Integer(12);
+        hello(i);
 	}
 
-	private static void topologicalSort(GraphUsingAdjacencyList g) {
+
+	private static void hello(Integer s) {
+
+	}
+
+	public static void topologicalSort(GraphUsingAdjacencyList g) {
 		// for topological sort , this graph should be a DAG
 		Stack<Integer> order = new Stack<>();
 		boolean[] visited = new boolean[g.getV()];
-		for(int i=0;i<g.getV();i++) {
-			if(!visited[i])
-				topologicalSortUtil(g , i , visited , order);
+		for(int i=0;i< g.getV();i++){
+			topologicalSortUtil(g,i,visited,order);
 		}
+		Collections.reverse(order);
 		System.out.println(order);
 	}
 
 	private static void topologicalSortUtil(GraphUsingAdjacencyList g, int cur, boolean[] visited, Stack<Integer> order) {
-	
-		visited[cur] = true;
-		for(Integer neighbour:g.getAdj()[cur]) {
-			if(!visited[neighbour]) {
-				topologicalSortUtil(g, neighbour, visited, order);
-			}
+		if(visited[cur]){
+			return;
 		}
-		//after visiting all its neighbours mark this as completed
-		order.add(cur);
+		for(Integer v : g.getAdj()[cur]){
+			topologicalSortUtil(g,v,visited,order);
+		}
+		visited[cur] = true;
+		order.push(cur);
 	}
 
 }

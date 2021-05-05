@@ -1,5 +1,8 @@
 package GraphTheory;
 
+import GraphTheory.GraphRepresentation.GraphUsingAdjacencyList;
+import GraphTheory.graphTraversal.TopologicalSort;
+
 public class OrderOfAlphabetsInAlienLanguageDictionary {
 
 	public static void main(String[] args) 
@@ -9,7 +12,7 @@ public class OrderOfAlphabetsInAlienLanguageDictionary {
     }
 
 	private static void printOrder(String[] words, int alphabets) {
-		Graph g = new Graph(alphabets);	//graph of number of alphabets in the language
+		GraphUsingAdjacencyList g = new GraphUsingAdjacencyList(alphabets);	//graph of number of alphabets in the language
 		for(int i=0; i< words.length - 1 ; i++ ) {
 			String word1 = words[i];
 			String word2 = words[i+1];

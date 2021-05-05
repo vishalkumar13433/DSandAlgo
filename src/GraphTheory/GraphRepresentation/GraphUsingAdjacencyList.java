@@ -6,7 +6,7 @@ import java.util.List;
 public class GraphUsingAdjacencyList {
 	private int V;
 	private LinkedList<Integer>[] adj;
-	
+
 	public GraphUsingAdjacencyList(int numOfVertices) {
 		this.V = numOfVertices;
 		adj = new LinkedList[numOfVertices];
@@ -35,7 +35,7 @@ public class GraphUsingAdjacencyList {
 		this.adj[src].add(dest);
 		this.adj[dest].add(src);
 	}
-	
+
 	public void addEdgeDirected(int src, int dest) {
 		this.adj[src].add(dest);
 	}
@@ -49,5 +49,5 @@ public class GraphUsingAdjacencyList {
 			System.out.println();
 		}
 	}
-	
+
 }
