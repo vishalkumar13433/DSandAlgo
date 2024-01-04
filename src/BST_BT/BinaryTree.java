@@ -5,7 +5,6 @@ import java.util.*;
 public class BinaryTree {
 
 	Node root;
-	
 	public static void main(String[] args) {
 		BinaryTree bt=new BinaryTree();
 		bt.root=new Node(1);
@@ -84,26 +83,21 @@ public class BinaryTree {
 	}
 
 	private void itr_postorder(Node root) {
-		List<Integer> l=new ArrayList();	//Store Output
-		
-		//Perform reverse Iterative Preorder 
-		if(root==null)
+		List<Integer> l=new ArrayList();
+		if (root == null) {
 			return;
-		Stack<Node> s=new Stack();
-		while(!s.isEmpty() || root!=null)
-		{
-			if(root!=null)
-			{	
-				l.add(root.data);
-				s.push(root.left);
-				root=root.right;
-			}
-			else
-			{
-				root=s.pop();
-			}
 		}
-		//reverse array to get desired output
+		Stack<Node> st = new Stack<>();
+		st.add(root);
+		while(!st.isEmpty()) {
+			Node cur = st.pop();
+			l.add(cur.data);
+			if (cur.left != null)
+				st.add(cur.left);
+			if (cur.right != null)
+				st.add(cur.right);
+		}
+
 		Collections.reverse(l);
 		System.out.println(l);
 	}
@@ -124,25 +118,25 @@ public class BinaryTree {
 		}
 	}
 
+
 	private void itr_inorder(Node root) {
-		if(root==null)
-				return;
-		Stack<Node> s=new Stack();
-		while(!s.isEmpty() || root!=null)
-		{
-			if(root!=null)
-			{
-				s.push(root);
-				root=root.left;
+		if(root == null) {
+			return;
+		}
+		Stack<Node> st = new Stack<>();
+		st.add(root);
+		Node cur = root.left;
+		while(!st.isEmpty() || cur != null) {
+			while(cur != null) {
+				st.add(cur);
+				cur = cur.left;
 			}
-			else
-			{
-				Node temp=s.pop();
-				System.out.print(temp.data + " ");
-				root=temp.right;
-			}
+			cur = st.pop();
+			System.out.print(cur.data + " -> ");
+			cur = cur.right;
 		}
 	}
+
 
 	private void postorder(Node root) {
 		if(root==null)
