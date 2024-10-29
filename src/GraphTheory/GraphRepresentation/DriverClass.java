@@ -1,11 +1,11 @@
-package GraphTheory.GraphRepresentation;
+package src.GraphTheory.GraphRepresentation;
 
 public class DriverClass {
 
 	public static void main(String[] args) {
 		
 		int V = 5; 
-		GraphUsingAdjacencyList graph = new GraphUsingAdjacencyList(V); 
+		GraphUsingAdjacencyList graph = new GraphUsingAdjacencyList(V);
 		graph.addEdge(0, 1); 
 		graph.addEdge(0, 4); 
 		graph.addEdge(1, 2); 

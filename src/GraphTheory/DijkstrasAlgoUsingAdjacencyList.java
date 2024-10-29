@@ -1,4 +1,4 @@
-package GraphTheory;
+package src.GraphTheory;
 
 import java.net.Socket;
 import java.util.Arrays;
@@ -60,7 +60,7 @@ public class DijkstrasAlgoUsingAdjacencyList {
 				}
 			}
 		}
-		 printDijkstra(d, start);
+		printDijkstra(d, start);
 	}
 
 	public void printDijkstra(Integer[] distance, int sourceVertex){

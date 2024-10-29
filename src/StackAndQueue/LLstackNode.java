@@ -1,4 +1,4 @@
-package StackAndQueue;
+package src.StackAndQueue;
 
 public class LLstackNode {
 	public int data;

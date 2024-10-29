@@ -1,4 +1,4 @@
-package BST_BT;
+package src.BST_BT;
 public class sumNodesonLongestPath {
 	static int max_len=0,sum=0;
 	public static void main(String[] args) {

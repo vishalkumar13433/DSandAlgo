@@ -1,4 +1,4 @@
-package ImpQuestion;//import java.io.BufferedReader;
+package src.ImpQuestion;//import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Scanner;
 

@@ -1,12 +1,13 @@
-package GraphTheory.graphTraversal;
+package src.GraphTheory.graphTraversal;
 
-import GraphTheory.GraphRepresentation.GraphUsingAdjacencyList;
+
+import src.GraphTheory.GraphRepresentation.GraphUsingAdjacencyList;
 
 public class CheckForCycleInAGraph {
 
 	public static void main(String[] args) {
 		int V = 4;
-		GraphUsingAdjacencyList directedGraph = new GraphUsingAdjacencyList(V); 
+		GraphUsingAdjacencyList directedGraph = new GraphUsingAdjacencyList(V);
 		directedGraph.addEdgeDirected(0, 1); 
 		directedGraph.addEdgeDirected(0, 2); 
 		directedGraph.addEdgeDirected(1, 2); 

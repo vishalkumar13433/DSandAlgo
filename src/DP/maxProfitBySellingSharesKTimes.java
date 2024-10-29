@@ -1,4 +1,4 @@
-package DP;
+package src.DP;
 
 public class maxProfitBySellingSharesKTimes {
 

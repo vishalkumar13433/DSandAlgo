@@ -1,4 +1,4 @@
-package BST_BT;
+package src.BST_BT;
 import java.util.TreeSet;
 
 public class paitWithSumXBST {

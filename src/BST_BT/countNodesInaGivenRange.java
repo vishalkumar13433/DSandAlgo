@@ -1,8 +1,9 @@
-package BST_BT;
+package src.BST_BT;
+
 public class countNodesInaGivenRange {
 
 	public static void main(String[] args) {
-		Node root = new Node(10); 
+		Node root = new Node(10);
         root.left     = new Node(5); 
         root.right     = new Node(50); 
         root.left.left = new Node(1); 

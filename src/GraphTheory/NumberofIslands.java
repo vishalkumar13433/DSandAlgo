@@ -1,16 +1,8 @@
-package GraphTheory;
-
-import ImpQuestion.DisjointSetusingArrays;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
-
-//import DisjointSet.DisjointSetusingArrays;
+package src.GraphTheory;
 
 //need to write this again
+
+import src.ImpQuestion.DisjointSetusingArrays;
 
 public class NumberofIslands {
 

@@ -1,4 +1,4 @@
-package BST_BT;
+package src.BST_BT;
 public class CustomQueue {
 	Node node;
 	int hd;

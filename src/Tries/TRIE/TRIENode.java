@@ -1,4 +1,4 @@
-package Tries.TRIE;
+package src.Tries.TRIE;
 
 public class TRIENode {
 	public boolean isWord;

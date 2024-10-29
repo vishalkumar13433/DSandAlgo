@@ -1,4 +1,4 @@
-package GraphTheory.GraphRepresentation;
+package src.GraphTheory.GraphRepresentation;
 
 import java.util.LinkedList;
 import java.util.List;

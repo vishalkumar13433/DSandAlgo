@@ -1,4 +1,4 @@
-package Arrays.Strings;
+package src.Arrays.Strings;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

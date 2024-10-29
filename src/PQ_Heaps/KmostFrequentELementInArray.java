@@ -1,4 +1,4 @@
-package PQ_Heaps;
+package src.PQ_Heaps;
 
 import java.util.ArrayList;
 import java.util.Collections;

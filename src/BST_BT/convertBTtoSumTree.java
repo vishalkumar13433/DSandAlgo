@@ -1,9 +1,9 @@
-package BST_BT;
+package src.BST_BT;
 public class convertBTtoSumTree {
 
 	public static void main(String[] args) {
 		 	
-			BinaryTree tree = new BinaryTree(); 
+			BinaryTree tree = new BinaryTree();
 			tree.root = new Node(10); 
 	        tree.root.left = new Node(-2); 
 	        tree.root.right = new Node(6); 

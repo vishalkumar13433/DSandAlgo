@@ -1,4 +1,4 @@
-package GraphTheory;
+package src.GraphTheory;
 
 public class PQEntry implements Comparable<PQEntry>{
 	Integer key;

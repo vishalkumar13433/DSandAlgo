@@ -1,4 +1,4 @@
-package PQ_Heaps;
+package src.PQ_Heaps;
 public class convertArrayToMaxHeap {
 	int heap_size;
 
@@ -56,18 +56,18 @@ public class convertArrayToMaxHeap {
 		int size = this.heap_size;
 		int leftChild = node * 2 + 1;
 		int rightChild = node * 2 + 2;
-		if(leftChild >= size) return; // child are empty tree which are max heaps by default
+		if (leftChild >= size) return; // child are empty tree which are max heaps by default
 		int max = node;
-		if(arr[node] < arr[leftChild]){
+		if (arr[node] < arr[leftChild]) {
 			max = leftChild;
 		}
-		if(rightChild< size &&  arr[max] < arr[rightChild]){
+		if (rightChild < size && arr[max] < arr[rightChild]) {
 			max = rightChild;
 		}
-		if(max != node){
-			swap(arr , max , node);
+		if (max != node) {
+			swap(arr, max, node);
 			// subtree might be affected after shuffling , hence, heapifying it
-			max_heapify(arr,max);
+			max_heapify(arr, max);
 		}
 
 	}

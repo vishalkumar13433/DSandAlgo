@@ -1,4 +1,4 @@
-package BitManipulation;
+package src.BitManipulation;
 
 public class findNumberAppearOnceOthersAppearTwice {
 

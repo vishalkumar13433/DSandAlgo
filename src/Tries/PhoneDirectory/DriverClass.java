@@ -1,8 +1,7 @@
-package Tries.PhoneDirectory;
+package src.Tries.PhoneDirectory;
 
 
-import Tries.TRIE.TRIENode;
-import Tries.TRIE.TRIETesting;
+import src.Tries.TRIE.*;
 
 public class DriverClass {
 

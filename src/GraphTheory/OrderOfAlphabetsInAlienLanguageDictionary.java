@@ -1,7 +1,8 @@
-package GraphTheory;
+package src.GraphTheory;
 
-import GraphTheory.GraphRepresentation.GraphUsingAdjacencyList;
-import GraphTheory.graphTraversal.TopologicalSort;
+
+import src.GraphTheory.GraphRepresentation.GraphUsingAdjacencyList;
+import src.GraphTheory.graphTraversal.TopologicalSort;
 
 public class OrderOfAlphabetsInAlienLanguageDictionary {
 

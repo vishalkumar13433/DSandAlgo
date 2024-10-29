@@ -1,4 +1,4 @@
-package GraphTheory.Questions;
+package src.GraphTheory.Questions;
 
 public class Boggle {
 

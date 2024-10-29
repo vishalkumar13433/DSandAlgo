@@ -1,4 +1,4 @@
-package ImpQuestion;
+package src.ImpQuestion;
 
 public class DisjointSetusingArrays {
 	int[] parent;

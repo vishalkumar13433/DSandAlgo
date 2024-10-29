@@ -1,4 +1,4 @@
-package Arrays.TwoPointerTechnique;
+package src.Arrays.TwoPointerTechnique;
 
 public class ReverseString {
 

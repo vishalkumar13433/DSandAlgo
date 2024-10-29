@@ -1,4 +1,4 @@
-package GraphTheory;
+package src.GraphTheory;
 
 import java.util.Arrays;
 

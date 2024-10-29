@@ -1,4 +1,4 @@
-package BST_BT;
+package src.BST_BT;
 public class BSTtoGreaterSumTree {
 	static int sum=0;
 	public static void main(String[] args) {

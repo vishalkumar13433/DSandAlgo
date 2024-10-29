@@ -1,8 +1,9 @@
-package BST_BT;
+package src.BST_BT;
+
 public class LCA {
 
 	public static void main(String[] args) {
-		Node root = new Node(20); 
+		Node root = new Node(20);
         root.left = new Node(8); 
         root.right = new Node(22); 
         root.left.left = new Node(4); 

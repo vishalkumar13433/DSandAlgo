@@ -1,4 +1,4 @@
-package Arrays.Strings;
+package src.Arrays.Strings;
 import java.util.HashSet;
 
 public class countnoofWordsPresentinString {

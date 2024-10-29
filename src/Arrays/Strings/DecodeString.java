@@ -1,4 +1,4 @@
-package Arrays.Strings;
+package src.Arrays.Strings;
 
 
 public class DecodeString {

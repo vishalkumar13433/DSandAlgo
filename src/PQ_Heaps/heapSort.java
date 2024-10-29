@@ -1,4 +1,4 @@
-package PQ_Heaps;
+package src.PQ_Heaps;
 
 public class heapSort {
 	static int heap_size;

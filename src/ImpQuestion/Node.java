@@ -1,4 +1,4 @@
-package ImpQuestion;
+package src.ImpQuestion;
 
 public class Node {
 	int data;

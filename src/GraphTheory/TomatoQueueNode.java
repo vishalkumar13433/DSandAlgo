@@ -1,4 +1,4 @@
-package GraphTheory;
+package src.GraphTheory;
 
 public class TomatoQueueNode {
 	int row;

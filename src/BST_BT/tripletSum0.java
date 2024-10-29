@@ -1,4 +1,6 @@
-package BST_BT;
+package src.BST_BT;
+
+
 public class tripletSum0 {
 	static Node head,tail;
 	public static void main(String[] args) {
